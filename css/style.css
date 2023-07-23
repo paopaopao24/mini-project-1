@@ -1,0 +1,387 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Karla:wght@300&family=Poppins:wght@300&family=Ramabhadra&family=Righteous&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.toptext-container {
+    background-color: rgb(235, 8, 8);
+    width: 100%;
+    font-size: 15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 2px;
+}
+nav {
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 3px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(235, 8, 8);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.brand {
+    font-size: 35px;
+    padding: 0 0 0 0px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+}
+.search-bar {
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 30px; 
+}
+nav ul li {
+    /* padding: 0 30px 0 0;  */
+    transition: all .3s;  
+}
+nav ul li a {
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+nav ul li a:hover {
+    transform: scale(1.1);
+    background-color: #061da0;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+/* HEADER */
+.header {
+    margin: 45px auto;
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url(../images/Concert\ Crowd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header span {
+    font-size: 80px;
+    font-weight: 800;
+}
+/* ARTIST CARD SECTION */
+.card-container {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.card-container .container-title {
+    font-weight: 800;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.card-container .container-subTitle {
+    font-weight: 700;
+    font-size: 15px;
+}
+ .cards-wrapper {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cards-wrapper .cards {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px outset black; */
+    /* box-shadow: 1px 1px 20px 1px; */
+}
+ .cards .image {
+    width: 100%;
+    height: 270px;
+}
+ .cards .image  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.cards-wrapper .cards p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* HERO SECTION */
+.second-section {
+    height: 300px;
+    width: 80%;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    margin: 0 auto 50px;
+    background-image: url(../images/yellow.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.second-section div span {
+    font-size: 50px;
+    font-weight: 700;
+}
+/* CONCERT CARDS SECTION */
+.concert-container {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.concert-subtitle {
+    padding: 20px 0;
+    font-weight: 700;
+}
+.concert-container .concert-title {
+    font-weight: 800;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.concert-wrapper {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.concert-wrapper .concert-cards {
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+.concert-cards .concert-image {
+    width: 100%;
+    height: 270px;
+}
+.concert-cards .concert-image img {
+    width: 100%;
+    height: 270px;
+}
+.concert-wrapper .concert-cards p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.headtext {
+    font-weight: 700;
+}
+/* DOWNLOAD APP SECTION */
+.download-app {
+    height: 200px;
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    background-image: url(../images/downloadapp1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.download-app .downloadBtn-container {
+    display: flex;
+}
+.download-text {
+    font-size: 30px;
+    font-weight: 800;
+}
+.download-subtext {
+    font-size: 15px;
+}
+.download-app .downloadBtn-container .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: transparent;
+}
+.download-app .downloadBtn-container .qr {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/qr.png);
+}
+.download-app .downloadBtn-container .btns button {
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+.download-app .downloadBtn-container .btns .android {
+    height: 60px;
+    width: 150px;
+    background-image: url(../images/ggplay.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgb(20, 19, 19);
+
+}
+.download-app .downloadBtn-container .btns .ios {
+    height: 60px;
+    width: 150px;
+    background-image: url(../images/app-store.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+}
+.download-app .downloadBtn-container 
+.appText-container {
+    display: flex;
+    flex-direction: column;
+}
+.download-app .downloadBtn-container 
+.appText-container span {
+    display: inline-block;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #020969e3;
+    color: white;
+}
+.footer1 {
+    padding-top: 60px;
+}
+.footer1 h3 {
+    font-size: 50px;
+}
+footer .footer-div p {
+    margin-top: 10px;
+    transition: all .3s;
+}
+footer .footer-div p:hover {
+    transform: scale(1.1);
+    background-color: #a00606;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+.newsletter {
+    height: 150px;
+    width: 100%;
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222727;
+    color: white;
+}
+.newsletter-text {
+    font-size: 30px;
+}
+.input-email {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: 0;
+}
+.signupBtn {
+    border: 0;
+}
+@media only screen and (max-width: 850px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    nav h1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    nav ul {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+    header {
+        padding: 20px;
+        align-items: start;    
+    }
+    header .heading {
+        font-size: 40px;
+    }
+    .third-section {
+        height: auto;
+        width: 100%;
+    }
+    .third-section .concert-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .fourth-section {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fourth-section .appText-container .download-text {
+        font-size: 15px;
+    }
+    .fourth-section .appText-container .download-subtext {
+        font-size: 10px;
+    }
+    .download-app {
+        display: flex;
+        height: max-content;
+    }
+    .downloadBtn-container {
+        flex-direction: column;
+    }
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter .newsletter-text {
+        font-size: 15px;
+    }
+    footer {
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+}
