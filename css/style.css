@@ -65,7 +65,7 @@ nav ul li a:hover {
 }
 /* HEADER */
 .header {
-    margin: 45px auto;
+    /* margin: 45px auto; */
     height: 600px;
     width: 100%;
     border: 1px solid black;
@@ -108,7 +108,14 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     /* border: 2px outset black; */
-    /* box-shadow: 1px 1px 20px 1px; */
+    box-shadow: 1px 1px 20px 1px;
+    transition: all .3s;
+}
+.cards-wrapper .cards:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
 }
  .cards .image {
     width: 100%;
@@ -176,6 +183,14 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     /* border: 1px solid black; */
+    box-shadow: 1px 1px 20px 1px;
+    transition: all .3s;
+}
+.concert-wrapper .concert-cards:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
 }
 .concert-cards .concert-image {
     width: 100%;
